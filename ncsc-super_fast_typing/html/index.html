@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Typing Challenge</title>
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="js/draw.js"></script>
+	</head>
+	<body>
+		<h1>Typing Challenge</h1>
+		<canvas id="canvas"></canvas>
+		<br />
+		<p>Input the above word.<p>
+		<form name="form" onsubmit="return false;">
+			<input name="word" type="text" />
+			<input type="submit" value="send" onclick="send_word(); return false;" />
+		</form>
+		<p id="msg"></p>
+		<h2>Rule</h2>
+		<p>Input 10 words shown in images.</p>
+		<p>If you complete this typing challenge in 3 second, you can get a flag.</p>
+		<p>Restart to input `:start:`.</p>
+	</body>
+</html>

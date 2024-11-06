@@ -1,0 +1,7 @@
+services:
+  host:
+    build: ./
+    volumes:
+      - ./app.py:/home/ncsc-user/app.py:ro
+    ports:
+      - "2003:10000"

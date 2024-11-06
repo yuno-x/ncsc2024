@@ -1,0 +1,9 @@
+services:
+  host:
+    build: ./
+    volumes:
+      - ./html:/var/www/html:ro
+      - ./wordimg:/var/www/wordimg:ro
+      - ./php.ini:/usr/local/etc/php/php.ini:ro
+    ports:
+      - "2005:80"
